@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#product03{width: 100%; background-image: url(../img/product03/bag_page002.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+#product03 .content{width: 80%; display: flex; margin: 0 auto; position: relative; top: 50%; transform: translateY(-50%);}
+
+#product03 .content .tab_contents{width: 50%; height: 800px;}
+#product03 .content .tab_contents .contents_wrap{width: 100%;}
+#product03 .content .tab_contents .contents_wrap div img{width: 100%; height: 800px;}
+#product03 .content .tab_contents .contents_wrap > div{width: 100%; height: 800px; display: none;}
+
+
+#product03 .content .textWrap{width: 50%;  background-color: #fff; text-align: center; padding: 50px 0;}
+#product03 .content .textWrap h2{width: 100%; font-size: 3rem; text-align: center; padding-bottom: 50px;}
+#product03 .content .textWrap h3{width: 100%; font-size: 1.5rem; text-align: center; padding-bottom: 30px; color: #00843D;}
+
+#product03 .content .text{padding-bottom: 30px;}
+#product03 .content .text > li{width: 100%; font-size: 1.25rem; text-align: center; }
+#product03 .content .mText{display: none;}
+
+#product03 .content .textWrap a{display: block; width: 200px; padding: 10px 10px; margin: 0 auto; background-color: #fff; margin-top: 30px; border: 1px solid #333;}
+#product03 .content .textWrap a:hover{background-color: #00843D; color: #fff; transition: 0.3s;}
+
+#product03 .circle{display: flex; justify-content: center;}
+#product03 .circle li{padding-right: 40px; }
+#product03 .circle li:last-child{padding-right: 0;}
+
+#product03 .circle img{width: 20px; height: 20px; cursor: pointer;}
+
+
+
+
+/* tablet & mobile */
+@media screen and (max-width: 1023px) {
+    #product03 .content{display: block;}
+    #product03 .content .tab_contents{display: block; width: 100%; height: 375px; object-fit: fill;}
+    #product03 .content .tab_contents .contents_wrap div img{height: 375px;}
+    #product03 .content .textWrap{width: 100%; padding: 30px 0;}
+    #product03 .content .textWrap h2{font-size: 1.75rem; padding-bottom: 30px;}
+    #product03 .content .textWrap h3{font-size: 1.25rem; padding-bottom: 15px;}
+    #product03 .content .text > li{font-size: 1rem;}
+    #product03 .content .text{padding-bottom: 15px;}
+    
+    #product03 .content .textWrap a{margin-top: 15px; margin-bottom: 15px;}
+
+    #product03 .none{display: none;}
+}
+
+/* mobile */
+@media screen and (max-width:500px) {
+    #product03{background-image: url(../img/product03/bg_mobile.png); background-repeat: no-repeat;}
+
+    #product03 .content .textWrap h3{display: none;}
+
+    #product03 .content .text{display: none;}
+    #product03 .content .mText{display: block; padding-bottom: 15px; }
+
+    #product03 .circle li{padding-right: 20px; }
+}

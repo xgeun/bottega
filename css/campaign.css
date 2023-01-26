@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#campaign{width: 100%; height: 100%; }
+#campaign .inner_wrap{width: 100%; height: 100%; }
+#campaign .contents_wrap{display: flex; width: 100%; height: 100%; }
+#campaign .contents_wrap > div{width: 50%; }
+
+#campaign .left_contents{ width: 100%; height: 100%; background: #464646; }
+#campaign .text_wrap{ width: 100%; height: 50%; padding: 120px 60px;}
+#campaign .text_wrap h2{color: #fff; font-size: 4vw; margin-bottom: 40px;}
+#campaign .text_wrap p{color: #fff; font-size: 2.25vw; margin-bottom: 40px;}
+#campaign .text_wrap a{display: block; width: 200px; height: 100px; color: #fff; border: 1px solid #fff; line-height: 100px; text-align: center;}
+#campaign .text_wrap a:hover{background-color: #1BC155; border: none; transition: 0.3s;}
+
+#campaign .right_contents{width: 100%; height: 100%;} 
+#campaign .right_contents .swiper{width: 100%; height: 100%;} 
+#campaign .right_contents .swiper-slide{width: 100%; height: 100%;} 
+#campaign .right_contents .swiper img{display: block; width: 100%; height: 100%; object-fit: cover; }
+#campaign .swiper-pagination{left: calc(50% - 25%); font-size: 3vw; color: #fff;}
+#campaign .swiper-pagination-current, .swiper-pagination-total{font-size: 2vw; color: #fff;}
+
+@media screen and (max-width:1023px){
+    #campaign .contents_wrap > div{width: 100%; }
+    #campaign .contents_wrap .text_wrap{z-index: 2; position: absolute; width: 50%; height: 50%; padding: 120px 40px;}
+
+    #campaign .text_wrap a{width: 160px; height: 80px; line-height: 80px;}
+    #campaign .swiper-pagination{left: 0;}
+}
+
+@media screen and (max-width:743px){
+    #campaign .text_wrap a{width: 116px; height: 60px; line-height: 60px;}
+    
+}

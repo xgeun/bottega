@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+#product02{width: 100%; height: 100%; background-image: url(../img/product02/bag_page01.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;}
+#product02 .textWrap{width: 70%; position: relative; left: 200px; padding-top: 200px;}
+#product02 .textWrap h2{color: #fff; font-size: 3rem; padding-bottom: 50px;}
+#product02 .textWrap h3{color: #fff; font-size: 2.5rem; padding: 30px 0;}
+#product02 .textWrap p{color: #fff; font-size: 2rem; padding-bottom: 80px;}
+#product02 .textWrap ul{display: flex; width: 100%; }
+#product02 .textWrap li{ padding: 10px 40px; border: 1px solid #fff;}
+#product02 .textWrap li:first-child{margin-right: 50px;}
+#product02 .textWrap a{width: 100%; font-size: 1.5rem; color: #fff; }
+#product02 .textWrap li:hover{background-color: #00843D; border: none; transition: 0.3s;}
+
+
+ 
+
+/* tablet & mobile */
+@media screen and (max-width: 1023px) {
+    #product02 .textWrap{width: 100%; left: 0; text-align: center;}
+    #product02 .textWrap ul{justify-content: center;}
+}
+
+/* mobile */
+@media screen and (max-width:500px) {
+    #product02{display: none;}
+}

@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+
+#header{position: fixed; top: 0; left: 0; z-index: 3000; width: 100%; height: 80px; background-color: transparent;}
+#header .innerWrap{display: flex; height: 100%; justify-content: space-between; align-items: center;}
+
+
+/* desktop */
+@media screen and (min-width: 1024px){
+    /* none part */
+    .panelIcon, .searchIcon, .panel_img{display: none;}
+
+    /* view part */
+    #header h1 img{height: 100%;}
+    #header .tNav ul{display: flex;}
+    #header .tNav li{height: 20px; line-height: 20px; margin-right: 20px;}
+    #header .tNav li:last-child{margin-right: 0;}
+    #header .tNav a{color: #ccc; font-size: 0.875rem;}
+
+    #header .gnb {height: 100%;}
+    #header .gnb > ul{height: 100%; display: flex;}
+    #header .gnb > ul > li {position: relative; height: 100%;}
+    #header .gnb .mainNav{position: relative; display: block; width: 120px; height: 100%; border-bottom: 1px solid transparent; color: #fff; font-size: 1.125rem; text-align: center; line-height: 80px;}
+    #header .gnb li:hover .mainNav{color: #00843D;}
+
+    #header .gnb .subNav{/* display: none; */ position: absolute; top: 80px; left: 0; width: 100%; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff; text-align: center;}
+    #header .gnb .subNav a{font-size: 0.875rem; line-height: 40px;}
+    #header .gnb .subNav a:hover{color: #00843D;}
+}
+
+
+
+/* tablet & mobile */
+@media screen and (max-width: 1023px){
+    #header{height: 50px; }
+    #header h1{position: relative; z-index: 5200;}
+    #header h1 img{display: block; height: 100%;}
+    #header .panelIcon{position: relative; z-index: 5300; width: 32px; height: 24px; transition: 0.2s;}
+    #header .panelIcon span{position: absolute; left: 0; width: 100%; height: 4px; background-color: #fff; transition: 0.2s;}
+    #header .panelIcon span:nth-child(1){top: 0;}
+    #header .panelIcon span:nth-child(2){top: 10px;}
+    #header .panelIcon span:nth-child(3){top: 20px;}
+
+    /* panelIcon active */
+    #header .panelIcon.active{transform: rotate(45deg); transition-delay: 0.4s;}
+    #header .panelIcon.active span:nth-child(2){transform: scaleX(0);}
+    #header .panelIcon.active span:nth-child(1){top: 10px; transition-delay: 0.2s;}
+    #header .panelIcon.active span:nth-child(3){top: 10px; transform: rotate(90deg); transition-delay: 0.2s;}
+S
+    #header .searchIcon img{display: block;}
+
+    #header .gnb{position: fixed; top: 0; left: -100%; /* 처음엔 화면밖에 나가있어야함 */
+    z-index: 5100; width: 100%; height: 100%; padding: 16px; padding-top: 60px; background-color: #1BC155; transition: 0.6s ease-out;}
+    #header .gnb.active{left: 0;} /* 화면 안으로 들어오게 처리 */
+
+    #header .gnb > ul{width: 100%; border-top: 1px solid #ccc; background-color: #fff;}
+    #header .gnb .mainNav{position: relative; display: block; width: 100%; height: 50px; border-bottom: 1px solid #ccc;
+    padding: 0 16px; line-height: 49px; font-size: 1.25rem; color: #333; font-weight: 700;}
+    #header .gnb .mainNav:hover{color: #00843D;}
+
+    #header .gnb .subNav{display: block; position: relative; top: -1px; width: 100%; padding: 10px 16px; background-color: #fff; }
+    #header .gnb .subNav a{width: 100%; height: 40px; line-height: 40px; color: #333; font-size: 1.125rem;}
+    #header .gnb .subNav a:hover{font-weight: bold;}
+    
+
+    #header .gnb > .panel_img{display: block; width: 96%; height: 30%; object-fit: cover; position: fixed; bottom: 30px;}
+
+    #header .tNav{display: none;}
+}
+
+@media screen and (max-width: 375px){
+    #header .tNav ul{justify-content: space-between;}
+    #header .tNav li:first-child a{margin-left: 0;}
+    #header .gnb > .panel_img{width: 91%;}
+}
+
+/* iPhone5 */
+@media screen and (max-width: 320px){
+    #header .tNav a{width: 135px;}
+}
