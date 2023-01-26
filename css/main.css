@@ -5,9 +5,6 @@
 #myMenu li.active a{color: #fff; border-bottom: 1px solid #fff;}
 
 
-
-
-
 #main{width: 100%;}
 #main video{display: block; position: relative; width: 100%; height: 100%; object-fit: cover;}
 #main .text_wrap{position: absolute; top: 50%; transform: translateY(-50%); text-align: center;  width: 100%; z-index: 6000; }
@@ -48,7 +45,7 @@
 
 @media screen and (max-width: 1023px) {
     .pc_panel{display: none;}
-    #myMenu{display: none;}
+    #myMenu{position: absolute; left: -999em;}
     #main .text_wrap h2{font-size: 3rem; color: #fff; }
     #main .text_wrap h3{font-size: 2rem; color: #fff; margin: 45px 0;}
     #main .text_wrap p{font-size: 2.25rem; color: #fff;}
