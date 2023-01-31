@@ -22,7 +22,7 @@
 #product01 .text_wrap h2{ margin-top: 2.1vw; font-size: 3vw; color: #fff; line-height: 1.5;}
 #product01 .text_wrap p{font-size: 1.3vw; color: #fff; text-decoration: underline; margin-top: 2vw; font-weight: 500; line-height: 1.23; }
 
-#product01 .biew_btn{width: 60px; height: 60px; line-height: 60px; color: #fff; font-size: 6vw;}
+#product01 .view_btn{width: 60px; height: 60px; line-height: 60px; color: #fff; font-size: 6vw;}
 
 #product01 .text_wrap a{position: static; opacity: 0; }
 #product01 li:hover a{opacity: 1; transition: opacity 0.3s ease-in-out;}
@@ -52,6 +52,8 @@
     #product01 .contents_wrap li:nth-child(2){background-image: url(../img/2_product/product01_m02.png);}
     #product01 .contents_wrap li:nth-child(3){background-image: url(../img/2_product/product01_m03.png);}
     #product01 .contents_wrap li:nth-child(4){background-image: url(../img/2_product/product01_m04.png);}
+
+    #product01 .view_btn{display: none;}
 }
 
 

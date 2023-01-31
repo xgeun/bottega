@@ -3,7 +3,7 @@ $(document).ready(function(){
         //options here
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
         menu: '#myMenu'
-        });
+        });        
 });
 
 //gnb

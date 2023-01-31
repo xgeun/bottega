@@ -41,7 +41,7 @@
 .panel_right p{margin-top: 140px; color: #fff; font-size: 1.5vw;}
 .panel_right .panel_close{position: absolute; top: 50%; transform: translateY(-50%); right: -37px; display: block; width: 150px; height: 150px; background-image: url(../img/1_panel_img/close_bg.png); background-repeat: no-repeat; background-position: center;}
 
-.panel_right .biew_btn{display: block; width: 150px; height: 60px; margin: 0 auto; margin-top: 200px; line-height: 60px; color: #fff; text-align: center;font-size: 1.5rem; border: 1px solid #fff;}
+.panel_right .view_btn{display: block; width: 150px; height: 60px; margin: 0 auto; margin-top: 200px; line-height: 60px; color: #fff; text-align: center;font-size: 1.5rem; border: 1px solid #fff;}
 
 @media screen and (max-width: 1023px) {
     .pc_panel{display: none;}
