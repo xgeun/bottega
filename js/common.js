@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('#fullpage').fullpage({
         //options here
+        responsiveWidth: 500,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
         menu: '#myMenu'
         });        
